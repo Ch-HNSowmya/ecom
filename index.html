@@ -1,1 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced eCommerce</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>ShopEase</h1>
+    </div>
+    <div class="cart">
+      🛒 <span id="cart-count">0</span>
+    </div>
+  </header>
 
+  <main>
+    <section class="categories">
+      <button onclick="filterCategory('all')">All</button>
+      <button onclick="filterCategory('clothing')">Clothing</button>
+      <button onclick="filterCategory('shoes')">Shoes</button>
+    </section>
+
+    <section id="products" class="product-list"></section>
+  </main>
+
+  <div id="product-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="modal-title"></h2>
+      <p id="modal-description"></p>
+      <p><strong>Price: $<span id="modal-price"></span></strong></p>
+      <button onclick="addToCartFromModal()">Add to Cart</button>
+    </div>
+  </div>
+
+  <div class="cart-modal">
+    <h3>Your Cart</h3>
+    <ul id="cart-items"></ul>
+    <p>Total: $<span id="total-price">0</span></p>
+    <button onclick="clearCart()">Clear Cart</button>
+    <button onclick="checkout()">Checkout</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
