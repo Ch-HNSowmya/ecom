@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Advanced eCommerce</title>
+  <title>Makeup Store</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
     <div class="logo">
-      <h1>ShopEase</h1>
+      <h1>Makeup Store</h1>
     </div>
     <div class="cart">
       🛒 <span id="cart-count">0</span>
@@ -18,14 +18,16 @@
 
   <main>
     <section class="categories">
-      <button onclick="filterCategory('all')">All</button>
-      <button onclick="filterCategory('clothing')">Clothing</button>
-      <button onclick="filterCategory('shoes')">Shoes</button>
+      <button onclick="filterCategory('all')">All Products</button>
+      <button onclick="filterCategory('foundation')">Foundation</button>
+      <button onclick="filterCategory('lipstick')">Lipstick</button>
+      <button onclick="filterCategory('mascara')">Mascara</button>
     </section>
 
     <section id="products" class="product-list"></section>
   </main>
 
+  <!-- Modal for product details -->
   <div id="product-modal" class="modal">
     <div class="modal-content">
       <span class="close" onclick="closeModal()">&times;</span>
@@ -36,6 +38,7 @@
     </div>
   </div>
 
+  <!-- Cart modal -->
   <div class="cart-modal">
     <h3>Your Cart</h3>
     <ul id="cart-items"></ul>
