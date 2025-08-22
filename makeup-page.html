@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Makeup Store</title>
+  <link rel="stylesheet" href="makeup-style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>Makeup Store</h1>
+    </div>
+    <div class="cart">
+      🛒 <span id="cart-count">0</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="categories">
+      <button onclick="filterCategory('all')">All Products</button>
+      <button onclick="filterCategory('foundation')">Foundation</button>
+      <button onclick="filterCategory('lipstick')">Lipstick</button>
+      <button onclick="filterCategory('mascara')">Mascara</button>
+    </section>
+
+    <section id="products" class="product-list"></section>
+  </main>
+
+  <!-- Modal for product details -->
+  <div id="product-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2 id="modal-title"></h2>
+      <p id="modal-description"></p>
+      <p><strong>Price: $<span id="modal-price"></span></strong></p>
+      <button onclick="addToCartFromModal()">Add to Cart</button>
+    </div>
+  </div>
+
+  <!-- Cart modal -->
+  <div class="cart-modal">
+    <h3>Your Cart</h3>
+    <ul id="cart-items"></ul>
+    <p>Total: $<span id="total-price">0</span></p>
+    <button onclick="clearCart()">Clear Cart</button>
+    <button onclick="checkout()">Checkout</button>
+  </div>
+
+  <script src="makeup-script.js"></script>
+</body>
+</html>
