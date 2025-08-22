@@ -1,8 +1,10 @@
 const products = [
-  { id: 1, name: 'T-Shirt', category: 'clothing', price: 20, image: 'https://via.placeholder.com/200x150?text=T-Shirt', description: 'Comfortable cotton T-Shirt' },
-  { id: 2, name: 'Jeans', category: 'clothing', price: 40, image: 'https://via.placeholder.com/200x150?text=Jeans', description: 'Blue denim jeans for all seasons' },
-  { id: 3, name: 'Sneakers', category: 'shoes', price: 60, image: 'https://via.placeholder.com/200x150?text=Sneakers', description: 'Sporty sneakers for comfort and style' },
-  { id: 4, name: 'Boots', category: 'shoes', price: 80, image: 'https://via.placeholder.com/200x150?text=Boots', description: 'Durable boots for outdoor activities' },
+  { id: 1, name: 'Foundation', category: 'foundation', price: 35, image: 'https://via.placeholder.com/200x150?text=Foundation', description: 'Long-lasting liquid foundation' },
+  { id: 2, name: 'Lipstick', category: 'lipstick', price: 25, image: 'https://via.placeholder.com/200x150?text=Lipstick', description: 'Matte lipstick in bold colors' },
+  { id: 3, name: 'Mascara', category: 'mascara', price: 18, image: 'https://via.placeholder.com/200x150?text=Mascara', description: 'Waterproof mascara for fuller lashes' },
+  { id: 4, name: 'Lip Gloss', category: 'lipstick', price: 20, image: 'https://via.placeholder.com/200x150?text=Lip+Gloss', description: 'Glossy shine with a soft texture' },
+  { id: 5, name: 'Setting Spray', category: 'foundation', price: 22, image: 'https://via.placeholder.com/200x150?text=Setting+Spray', description: 'Setting spray to lock in your makeup' },
+  { id: 6, name: 'Eyebrow Pencil', category: 'mascara', price: 15, image: 'https://via.placeholder.com/200x150?text=Eyebrow+Pencil', description: 'Precision eyebrow pencil' }
 ];
 
 let cart = [];
